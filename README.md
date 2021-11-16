@@ -2,7 +2,7 @@
 
 **Are you interested in quantum computing and what it might mean for data science but don’t know where to start?**
 
-[image of quantum stuff](https://science.unimelb.edu.au/__data/assets/image/0008/3951350/varieties/large.png)
+![image of quantum stuff](https://science.unimelb.edu.au/__data/assets/image/0008/3951350/varieties/large.png)
 
 **Welcome to the MCDS Quantum Computing Workshop and learn the basics of quantum computing and how a quantum computer operates.**
 
