@@ -2,6 +2,8 @@
 
 **Are you interested in quantum computing and what it might mean for data science but don’t know where to start?**
 
+[image of quantum stuff](https://science.unimelb.edu.au/__data/assets/image/0008/3951350/varieties/large.png)
+
 **Welcome to the MCDS Quantum Computing Workshop and learn the basics of quantum computing and how a quantum computer operates.**
 
 Quantum computers represent the next evolutionary step for information processing. For some specific problems quantum computers outperform their conventional counterparts. The first quantum algorithms have already been demonstrated which outperform any classical algorithm. Although quantum computers are still bleeding-edge technology, being relatively small and noisy, they are developing fast and show tremendous potential for the future.
