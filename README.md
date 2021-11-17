@@ -1,4 +1,4 @@
-# Quantum Computing for Data Science Workshop
+# Quantum Computing for Data Science 2021 Workshop
 
 **Are you interested in quantum computing and what it might mean for data science but don’t know where to start?**
 
