@@ -19,11 +19,11 @@
 
 ## Thursday, 9/12
 
-1:00 pm: Introduction to Quantum Machine learning (MU)
-2:00 pm: Quantum SVM Research (JH)
-2:45 pm: Afternoon Tea
-3:15 pm: Quantum SVM Example (JH)
-4:00 pm: Core sets (MU)
+- 1:00 pm: Introduction to Quantum Machine learning (MU)
+- 2:00 pm: Quantum SVM Research (JH)
+- 2:45 pm: Afternoon Tea
+- 3:15 pm: Quantum SVM Example (JH)
+- 4:00 pm: Core sets (MU)
 
 ## Friday, 10/12
 
