@@ -23,7 +23,7 @@
 - 1:30 pm: Quantum SVM Research (JH)
 - 2:15 pm: Quantum SVM Example (JH)
 - 3:00 pm: Afternoon Tea
-- 3:30 pm: Core sets (MU)
+- 3:30 pm: Introduction to Coresets (MU)
 
 ## Friday, 10/12
 
