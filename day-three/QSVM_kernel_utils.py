@@ -87,3 +87,60 @@ def accuracy_score(model, x, labels):
     correct = predictions == labels
     accuracy = sum(correct) / len(correct)
     print("Accuracy score is ", np.round(accuracy[0],3)*100, "%")
+    
+    
+# HIDE THIS
+def get_statevector(x_data_array, quantum_circuit):
+    # This function takes some classical input data and a quantum circuit
+    
+    #Input : x_data_array - An array containing all the classical datapoint
+    #Input : quantum_circuit - The quantum circuit to pass the classical data into
+    #Output : statevector_array - An array containing the quantum statevector for each datapoint
+    " The entire circuit is constructed here and the statevector generated"       
+    statevector_array = [None] * len(x_data_array)
+
+    num_qubits = 1
+    
+    # Cycle through each datapoint and run it through the quantum circuit.
+    for i in range(len(x_data_array)):
+
+        sub_inst_U = quantum_circuit(x_data_array[i])
+        
+        qr = QuantumRegister(num_qubits, 'qr')
+        cr = ClassicalRegister(num_qubits, 'cr')
+        circ_U = QuantumCircuit(qr, cr)
+        
+
+   
+
+        circ_U.append(sub_inst_U, qr)
+            
+        # Select the StatevectorSimulator from the Aer provider
+        simulator = Aer.get_backend('statevector_simulator')
+        # Execute and get counts
+        result = execute(circ_U, simulator).result()
+        statevector = result.get_statevector(circ_U)
+
+        statevector_array[i] = statevector
+
+    return statevector_array
+
+# HIDE THIS
+def find_bloch_coordinates_from_statevector(statevector_array):
+    # Convert the statecetor into theta and phi bloch sphere coordinates.
+    
+    #Input : statevector_array - An array consisting of th quantum statevectors corresponding to each datapoint
+    # Output: theta, phi - Arrays containing the theta and phi coordinates for the bloch sphere representation of a statevector for each datapoint.
+    alpha = statevector_array[:, 0]
+    beta = statevector_array[:, 1]
+    
+    max_alpha = (max(abs(alpha)))
+    theta = 2 * np.arccos(abs(alpha) / max(max_alpha, 1))
+    
+    phi = [0] * len(theta)
+    for i in range(len(phi)):
+        phi[i] = cmath.phase(beta[i]) - cmath.phase(alpha[i])
+        phi = np.array(phi)
+    theta = theta.reshape((len(theta), 1))
+    phi = phi.reshape((len(phi), 1))
+    return theta, phi
