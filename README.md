@@ -14,7 +14,7 @@ You will get to know some of the fundamental quantum algorithms and see these al
 
 Agenda for this 4 half-day workshop:
 
-1. Tuesday 7 December - 1pm - 5pm - Introduction to quantum computing
-2. Wednesday 8 December - 1pm - 5pm - Variational methods in quantum computing
-3. Thursday 9 December - 1pm - 5pm - The quantum support vector machine (qSVM)
-4. Friday 10 December - 9am - 12pm - A challenge classification problem using quantum computers
+1. **Tuesday 7 December** - 1pm - 5pm - Introduction to quantum computing
+2. **Wednesday 8 December** - 1pm - 5pm - Variational methods in quantum computing
+3. **Thursday 9 December** - 1pm - 5pm - The quantum support vector machine (qSVM)
+4. **Friday 10 December** - 9am - 12pm - A challenge classification problem using quantum computers
