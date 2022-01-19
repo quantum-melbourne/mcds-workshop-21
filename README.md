@@ -18,3 +18,12 @@ Agenda for this 4 half-day workshop:
 2. **Wednesday 8 December** - 1pm - 5pm - Variational methods in quantum computing
 3. **Thursday 9 December** - 1pm - 5pm - The quantum support vector machine (qSVM)
 4. **Friday 10 December** - 9am - 12pm - A challenge classification problem using quantum computers
+
+## Contributors
+1. Prof. Lloyd Hollenberg
+2. Dr Charles Hill
+3. Dr Anna Phan (IBM)
+4. Dr Muhammad Usman
+5. Vivek Katial
+6. Floyd Creevey
+7. Jamie Heredge
